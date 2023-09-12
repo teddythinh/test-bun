@@ -1,15 +1,22 @@
 {
   "name": "test-bun",
   "version": "1.0.50",
+  "type": "module",
   "scripts": {
+    "start": "bun run src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist && echo 'Done.'",
     "dev": "bun run --watch src/index.ts"
   },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
   "dependencies": {
+    "@elysiajs/html": "^0.6.5",
     "elysia": "latest"
   },
   "devDependencies": {
     "bun-types": "latest"
   },
-  "module": "src/index.js"
+  "module": "src/index.ts"
 }
