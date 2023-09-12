@@ -1,8 +1,10 @@
 import { Elysia } from "elysia";
 import html from "@elysiajs/html";
+import { cors } from "@elysiajs/cors";
 
 const app = new Elysia()
   .use(html())
+  .use(cors())
   .get("/", ({ html }) => html(baseHtml))
   .listen(3000);
 

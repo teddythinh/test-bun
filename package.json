@@ -12,6 +12,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@elysiajs/cors": "^0.6.0",
     "@elysiajs/html": "^0.6.5",
     "elysia": "latest"
   },
